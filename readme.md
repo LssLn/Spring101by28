@@ -4,5 +4,5 @@
 4. Component and Autowired - Qualifier
 5. Named and Inject - CDI
 6. BeansScope - Prototype
-7. 7 7 BeanScope - Mix Scenarios
+7. BeanScope - Mix Scenarios
 8. BeanLifeCycle PostConstruct & PreDestroy
