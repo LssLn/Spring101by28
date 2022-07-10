@@ -6,5 +6,9 @@
 6. BeansScope - Prototype
 7. BeanScope - Mix Scenarios
 8. BeanLifeCycle PostConstruct & PreDestroy
---
+9. -
+10. -
+11. -
+12. -
+13. -
 14. HelloWorldAPI - RestController, Actuators, AOP
