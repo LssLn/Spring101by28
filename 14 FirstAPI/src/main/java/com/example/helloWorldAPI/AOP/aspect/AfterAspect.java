@@ -24,14 +24,17 @@ public class AfterAspect {
 	}
 	
 //	@After(value = "execution(* PACKAGE.*.*(..))")
-	@After(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))")
+//	@After(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))")
+	@After(value = "com.example.helloWorldAPI.AOP.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void after(JoinPoint joinPoint) {
 		logger.info("after execution of {}", joinPoint);
 	}
 	
 //	@AfterThrowing(value = "execution(* PACKAGE.*.*(..))",
-	@AfterThrowing(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))",
-			throwing = "exception")
+//	@AfterThrowing(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))",
+//			throwing = "exception")
+	@AfterThrowing(value = "com.example.helloWorldAPI.AOP.aspect.CommonJoinPointConfig.businessLayerExecution()",
+	throwing = "exception")
 	public void afterThrowing(JoinPoint joinPoint, Exception exception) {
 		logger.info("{} threw exception {}", joinPoint, exception);
 	}

@@ -14,6 +14,7 @@ public class BeforeAspect {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	// @Before("execution PACKAGE.*.*(..)) ")
+//	@Before("execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..)) ")
 	@Before("com.example.helloWorldAPI.AOP.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void before(JoinPoint joinPoint) {
 		logger.info("Method call intercepted {}", joinPoint);
