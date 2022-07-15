@@ -13,7 +13,8 @@ public class AroundAspect {
 	private Logger logger= LoggerFactory.getLogger(this.getClass());
 	
 //	@Around("execution(* PACKAGE.*.*(..))")
-	@Around("execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))")
+//	@Around("execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))")
+	@Around("com.example.helloWorldAPI.AOP.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void around(ProceedingJoinPoint joinPoint) throws Throwable{
 		long startTime = System.currentTimeMillis();
 		joinPoint.proceed();
