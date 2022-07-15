@@ -15,7 +15,9 @@ public class AfterAspect {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 //	@AfterReturning(value = "execution(* PACKAGE.*.*(..))",
-	@AfterReturning(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))",
+//	@AfterReturning(value = "execution(* com.example.helloWorldAPI.AOP.business_dao.*.*(..))",
+//			returning = "result")
+	@AfterReturning(value = "com.example.helloWorldAPI.AOP.aspect.CommonJoinPointConfig.businessLayerExecution()",
 			returning = "result")
 	public void afterReturning(JoinPoint joinPoint, Object result) {
 		logger.info("{} returned with value {}", joinPoint, result);
