@@ -6,7 +6,7 @@
 6. BeansScope - Prototype
 7. BeanScope - Mix Scenarios
 8. BeanLifeCycle PostConstruct & PreDestroy
-9. -
+9. CDI Injection
 10. -
 11. -
 12. -
