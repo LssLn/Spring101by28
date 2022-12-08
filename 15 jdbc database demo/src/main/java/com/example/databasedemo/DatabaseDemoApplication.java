@@ -23,5 +23,9 @@ public class DatabaseDemoApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info("All users -> {}", dao.findAll());
+		int id = 10001;
+		logger.info("User with id {} -> {}",id, dao.findById(id));
+		logger.info("Deleting user with id {}",id,dao.deleteById(id));
+		logger.info("All users -> {}", dao.findAll());
 	}
 }
