@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [02/May/2023:19:08:18 +0200] "GET / HTTP/1.1" 200 99 http-bio-8080-exec-1 50
+0:0:0:0:0:0:0:1 - - [02/May/2023:19:08:18 +0200] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [02/May/2023:19:13:28 +0200] "GET / HTTP/1.1" 200 140 http-bio-8080-exec-1 730
+0:0:0:0:0:0:0:1 - - [02/May/2023:19:25:57 +0200] "GET /login.do?name=sucker HTTP/1.1" 200 147 http-bio-8080-exec-1 628
+0:0:0:0:0:0:0:1 - - [02/May/2023:19:26:02 +0200] "GET /login.do?name=param HTTP/1.1" 200 146 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [02/May/2023:20:46:29 +0200] "GET /login.do?name=param HTTP/1.1" 200 199 http-bio-8080-exec-1 549
+127.0.0.1 - - [02/May/2023:20:46:29 +0200] "GET /login.do?name=param HTTP/1.1" 200 199 http-bio-8080-exec-2 12
