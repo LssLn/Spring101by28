@@ -13,3 +13,5 @@
 13. -
 14. HelloWorldAPI - RestController, Actuators, AOP (Before, After and Around Aspects)
 15. JDBC - JDBC usage with H2 database
+16. first web app - web application built using maven to explore tomcat, servlet, JEE, jsp
+
